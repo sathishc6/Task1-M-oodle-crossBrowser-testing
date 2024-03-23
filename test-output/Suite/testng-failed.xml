@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="Dummy@900"/>
+  <parameter name="username" value="dummy1"/>
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.moodleBrowser.MoodleCompatibility">
+        <methods>
+          <include name="browserLaunch" invocation-numbers="0"/>
+          <include name="snapShort"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.moodleBrowser.MoodleCompatibility -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="foxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.moodleBrowser.MoodleCompatibility">
+        <methods>
+          <include name="browserLaunch" invocation-numbers="0"/>
+          <include name="snapShort"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.moodleBrowser.MoodleCompatibility -->
+    </classes>
+  </test> <!-- foxTest(failed) -->
+  <test thread-count="5" name="edgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.moodleBrowser.MoodleCompatibility">
+        <methods>
+          <include name="browserLaunch" invocation-numbers="0"/>
+          <include name="snapShort"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.moodleBrowser.MoodleCompatibility -->
+    </classes>
+  </test> <!-- edgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
